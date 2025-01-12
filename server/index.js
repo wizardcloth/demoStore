@@ -2,7 +2,6 @@ import express from "express";
 import dotenv from "dotenv";
 import { database } from "./config/db.js";
 import router from "./router/products.route.js";
-import { VercelRequest, VercelResponse } from '@vercel/node';
 
 dotenv.config();
 
