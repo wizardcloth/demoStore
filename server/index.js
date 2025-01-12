@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import { database } from "./config/db.js";
 import router from "./router/products.route.js";
+import cors from "cors";
 
 dotenv.config();
 
@@ -9,6 +10,7 @@ const app = express();
 
 // Middleware setup
 app.use(express.json());
+app.use(cors());
 // Uncomment the following if you need to handle URL-encoded form data
 // app.use(express.urlencoded({ extended: true }));
 
