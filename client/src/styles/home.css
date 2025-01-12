@@ -1,0 +1,29 @@
+/* Default styles for mobile */
+.containergrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  /* Styles for tablets */
+  @media (min-width: 600px) {
+    .containergrid {
+      grid-template-columns: auto auto auto;
+    }
+  }
+  
+  /* Styles for laptops and larger screens */
+  @media (min-width: 1024px) {
+    .containergrid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (min-width: 1440px) {
+    #headmain{
+        font-size: 250%;
+    }
+    .containergrid {
+      grid-template-columns: 1fr 1fr ;
+    }
+  }
+  
